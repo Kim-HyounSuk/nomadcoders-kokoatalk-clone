@@ -1,0 +1,9 @@
+:root {
+  /* Color */
+  --yellow: #fae100;
+  --lightgray: #f9f9fa;
+  --darkgray: #2e363e;
+
+  /* Size */
+  --horizontal-space: 25px;
+}
