@@ -4,15 +4,12 @@
   text-align: center;
   background-color: var(--lightgray);
   padding: 15px 0px;
+  margin-top: -15px;
   margin-bottom: 10px;
 }
 
 #friends-display-link i {
   color: rgba(0, 0, 0, 0.3);
-}
-
-.friends-screen {
-  padding: 0px var(--horizontal-space);
 }
 
 .user-component__title--not-bold {
@@ -21,7 +18,7 @@
 
 .friends-screen__channel {
   margin-top: 25px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: var(--normal-border);
   padding-top: 15px;
 }
 

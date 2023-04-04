@@ -3,7 +3,7 @@
   bottom: 0;
   width: 100%;
   background-color: var(--lightgray);
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: var(--normal-border);
 }
 
 .nav__list {
@@ -21,17 +21,7 @@
 }
 
 .nav__notification {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  color: white;
-  font-size: 12px;
-  font-weight: 600;
-  background-color: tomato;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
   bottom: 7.5px;
   right: -10px;
 }
