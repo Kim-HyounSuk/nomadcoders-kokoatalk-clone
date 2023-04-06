@@ -1,0 +1,26 @@
+.status-bar.chat,
+.alt-header.chat,
+.main-screen.chat {
+  background-color: #abc1d1;
+}
+
+.chat-comlumn__others-bubble {
+  position: relative;
+  background: #f4f0f0;
+  border-radius: 0.4em;
+}
+
+.chat-comlumn__others-bubble::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-right-color: #f4f0f0;
+  border-left: 0;
+  border-top: 0;
+  margin-top: -10px;
+  margin-left: -20px;
+}

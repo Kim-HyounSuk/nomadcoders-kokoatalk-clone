@@ -7,11 +7,18 @@
 @import "./components/screen-header.css";
 @import "./components/user-component.css";
 @import "./components/badge.css";
+@import "./components/icon-row.css";
+@import "./components/encyclopedia.css";
+@import "./components/ad-component.css";
+@import "./components/alt-screen-header.css";
+@import "./components/chat.css";
 
 /* Screens */
 @import "./screens/login.css";
 @import "./screens/friends.css";
 @import "./screens/find.css";
+@import "./screens/more.css";
+@import "./screens/settings.css";
 
 body {
   color: var(--darkgray);
@@ -20,5 +27,10 @@ body {
 }
 
 .main-screen {
-  padding: 0px var(--horizontal-space);
+  padding: 0 var(--horizontal-space) 57px var(--horizontal-space);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
 }

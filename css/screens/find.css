@@ -1,24 +1,3 @@
-.find-icons {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 25px;
-}
-
-.find-icons__icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.find-icons__icon i {
-  font-size: 35px;
-}
-
-.find-icons__icon span {
-  font-size: 14px;
-  margin-top: 15px;
-}
-
 .recommended-friends {
   margin: 20px 0;
   padding: 20px 0;
@@ -32,6 +11,10 @@
   margin: 110px 0;
   text-align: center;
   font-size: 18px;
+}
+
+.open-chat {
+  overflow: auto;
 }
 
 .open-chat__header {
@@ -52,6 +35,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 15px;
+}
+
+.open-chat .open-post:not(:nth-child(2)) {
+  border-top: var(--normal-border);
+  padding: 15px 0;
 }
 
 .open-post__title {

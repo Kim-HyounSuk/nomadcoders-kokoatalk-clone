@@ -1,0 +1,7 @@
+.icon-wrapper {
+  padding: 15px;
+}
+
+.icon-wrapper > .icon-row > .icon-row__icon {
+  width: 70px;
+}
