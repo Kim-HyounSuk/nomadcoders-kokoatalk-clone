@@ -8,134 +8,142 @@
     <title>Settings - KokoaTalk Clone</title>
   </head>
 
-  <body>
-    <div class="container">
-      <div class="status-bar">
-        <div class="status-bar__column">
-          <span>SKT</span>
-          <i class="fas fa-wifi"></i>
+  <body id="chat-body">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>SKT</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-sync-alt" style="color: #000000"></i>
+        <span>11%</span>
+        <i class="fas fa-battery-quarter fa-lg" style="color: #000000"></i>
+        <i class="fas fa-bolt" style="color: #000000"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="javascript:history.back()"
+          ><i class="fas fa-angle-left fa-2x"></i
+        ></a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">설정</h1>
+      </div>
+      <div class="alt-header__column">
+        <i class="fas fa-search fa-lg"></i>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <div
+        class="user-component"
+        style="
+          padding-right: 10px;
+          padding-bottom: 30px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        "
+      >
+        <div class="user-component__column user-component__column-setting">
+          <img
+            class="user-component__avatar"
+            src="https://images.chosun.com/resizer/lG-SgEvz9JHuZsQq8poMx9LF_HI=/616x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/ICWKJBY67BFJ7J7FRN2233PLJA.png"
+          />
+          <span class="badge"><i class="fas fa-pencil-alt"></i></span>
+          <div class="user-component__text">
+            <h4 class="user-component__title">한지우</h4>
+            <h6 class="user-component__subtitle">+82 10-1234-5678</h6>
+          </div>
         </div>
-        <div class="status-bar__column">
-          <span>18:43</span>
-        </div>
-        <div class="status-bar__column">
-          <i class="fas fa-sync-alt" style="color: #000000"></i>
-          <span>11%</span>
-          <i class="fas fa-battery-quarter fa-lg" style="color: #000000"></i>
-          <i class="fas fa-bolt" style="color: #000000"></i>
+        <div class="user-component__column">
+          <span class="user-component__column-setting-profile"
+            >프로필 관리</span
+          >
         </div>
       </div>
 
-      <header class="alt-header">
-        <div class="alt-header__column">
-          <a href="javascript:history.back()"
-            ><i class="fas fa-angle-left fa-3x"></i
-          ></a>
-        </div>
-        <div class="alt-header__column">
-          <h1 class="alt-header__title">설정</h1>
-        </div>
-        <div class="alt-header__column">
-          <i class="fas fa-search fa-lg"></i>
-        </div>
-      </header>
-
-      <main class="main-screen">
-        <div
-          class="user-component"
-          style="
-            padding-right: 10px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-          "
-        >
-          <div class="user-component__column user-component__column-setting">
-            <img
-              class="user-component__avatar"
-              src="https://images.chosun.com/resizer/lG-SgEvz9JHuZsQq8poMx9LF_HI=/616x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/ICWKJBY67BFJ7J7FRN2233PLJA.png"
-            />
-            <span class="badge"><i class="fas fa-pencil-alt"></i></span>
-            <div class="user-component__text">
-              <h4 class="user-component__title">한지우</h4>
-              <h6 class="user-component__subtitle">+82 10-1234-5678</h6>
-            </div>
+      <ul class="settings-list">
+        <li class="settings-content">
+          <span><i class="fas fa-bullhorn"></i></span>
+          <span>공지사항</span>
+        </li>
+        <li class="settings-content">
+          <span><i class="far fa-question-circle"></i></span>
+          <span>고객센터/운영정책</span>
+        </li>
+        <li class="settings-content">
+          <span><i class="fas fa-info-circle"></i></span>
+          <div>
+            <span>앱 관리</span>
+            <span>10.1.6</span>
           </div>
-          <div class="user-component__column">
-            <span class="user-component__column-setting-profile"
-              >프로필 관리</span
-            >
+        </li>
+      </ul>
+      <ul class="settings-list">
+        <li class="settings-content">
+          <span><i class="fas fa-key"></i></span>
+          <div>
+            <span>코코아 계정</span>
+            <span>jiwoo@kokoa.com</span>
           </div>
-        </div>
+        </li>
+        <li class="settings-content">
+          <span><i class="fas fa-lock"></i></span>
+          <span>개인/보안</span>
+        </li>
+        <li class="settings-content">
+          <span><i class="far fa-user"></i></span>
+          <span>친구</span>
+        </li>
+        <li class="settings-content">
+          <span><i class="far fa-bell"></i></span>
+          <span>알림</span>
+        </li>
+        <li class="settings-content">
+          <span><i class="fas fa-spinner"></i></span>
+          <span>화면</span>
+        </li>
+        <li class="settings-content">
+          <span><i class="fas fa-brush"></i></span>
+          <div>
+            <span>테마</span>
+            <span>기본테마</span>
+          </div>
+        </li>
+        <li class="settings-content">
+          <span><i class="far fa-comment"></i></span>
+          <span>채팅</span>
+          <span class="badge">N</span>
+        </li>
+        <li class="settings-content">
+          <span><i class="fas fa-phone-alt"></i></span>
+          <span>통화</span>
+        </li>
+        <li class="settings-content">
+          <span><i class="fas fa-flask"></i></span>
+          <span>실험실</span>
+          <span class="badge">N</span>
+        </li>
+        <li class="settings-content">
+          <span><i class="fas fa-ellipsis-h"></i></span>
+          <span>기타</span>
+          <span class="badge">N</span>
+        </li>
+      </ul>
+    </main>
 
-        <ul class="settings-list">
-          <li class="settings-content">
-            <span><i class="fas fa-bullhorn"></i></span>
-            <span>공지사항</span>
-          </li>
-          <li class="settings-content">
-            <span><i class="far fa-question-circle"></i></span>
-            <span>고객센터/운영정책</span>
-          </li>
-          <li class="settings-content">
-            <span><i class="fas fa-info-circle"></i></span>
-            <div>
-              <span>앱 관리</span>
-              <span>10.1.6</span>
-            </div>
-          </li>
-        </ul>
-        <ul class="settings-list">
-          <li class="settings-content">
-            <span><i class="fas fa-key"></i></span>
-            <div>
-              <span>코코아 계정</span>
-              <span>jiwoo@kokoa.com</span>
-            </div>
-          </li>
-          <li class="settings-content">
-            <span><i class="fas fa-lock"></i></span>
-            <span>개인/보안</span>
-          </li>
-          <li class="settings-content">
-            <span><i class="far fa-user"></i></span>
-            <span>친구</span>
-          </li>
-          <li class="settings-content">
-            <span><i class="far fa-bell"></i></span>
-            <span>알림</span>
-          </li>
-          <li class="settings-content">
-            <span><i class="fas fa-spinner"></i></span>
-            <span>화면</span>
-          </li>
-          <li class="settings-content">
-            <span><i class="fas fa-brush"></i></span>
-            <div>
-              <span>테마</span>
-              <span>기본테마</span>
-            </div>
-          </li>
-          <li class="settings-content">
-            <span><i class="far fa-comment"></i></span>
-            <span>채팅</span>
-            <span class="badge">N</span>
-          </li>
-          <li class="settings-content">
-            <span><i class="fas fa-phone-alt"></i></span>
-            <span>통화</span>
-          </li>
-          <li class="settings-content">
-            <span><i class="fas fa-flask"></i></span>
-            <span>실험실</span>
-            <span class="badge">N</span>
-          </li>
-          <li class="settings-content">
-            <span><i class="fas fa-ellipsis-h"></i></span>
-            <span>기타</span>
-            <span class="badge">N</span>
-          </li>
-        </ul>
-      </main>
+    <div id="splash-screen">
+      <img src="./img/monsterball.png" />
+    </div>
+
+    <div id="no-mobile">
+      <img src="./img/monsterball.png" />
+      <span>화면을 조정해주세요ㅜㅜ</span>
+      <span>(넓이: 410px ~ 800px)</span>
     </div>
 
     <script

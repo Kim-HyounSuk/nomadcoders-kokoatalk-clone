@@ -4,23 +4,251 @@
   background-color: #abc1d1;
 }
 
-.chat-comlumn__others-bubble {
-  position: relative;
-  background: #f4f0f0;
-  border-radius: 0.4em;
+.main-screen.chat {
+  height: 100vh;
 }
 
-.chat-comlumn__others-bubble::before {
+.chat-title {
+  display: flex;
+  justify-content: center;
+}
+
+.chat-wrapper {
+  padding: 25px 0;
+}
+
+.chat-date {
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.chat-column__others,
+.chat-column__me {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.chat-column__me {
+  justify-content: flex-end;
+}
+
+.chat-column__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-column__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 25%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.chat-column__user {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.chat-column__text {
+  display: flex;
+  align-items: flex-end;
+}
+
+.chat-column__others .chat-column__bubble {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  padding: 10px 15px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: justify;
+  margin-right: 8px;
+}
+
+.chat-column__others .chat-column__bubble::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 50%;
-  width: 0;
-  height: 0;
-  border: 20px solid transparent;
-  border-right-color: #f4f0f0;
-  border-left: 0;
-  border-top: 0;
+  top: 65%;
+  left: -10px;
   margin-top: -10px;
-  margin-left: -20px;
+  border: 10px solid transparent;
+  border-right: 15px solid #fff;
+  transform: rotate(-80deg);
+}
+
+.chat-column__me .chat-column__bubble {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  padding: 10px 15px;
+  color: #000;
+  background-color: var(--yellow);
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: justify;
+  margin-left: 8px;
+}
+
+.chat-column__me .chat-column__bubble::before {
+  content: "";
+  position: absolute;
+  top: 65%;
+  right: -10px;
+  margin-top: -10px;
+  border: 10px solid transparent;
+  border-right: 15px solid var(--yellow);
+  transform: rotate(-95deg);
+}
+
+.chat-column__others .chat-column__bubble.no-arrow::before {
+  content: none;
+}
+
+.chat-column__time {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+}
+
+.chat-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 15px 0;
+  animation: appearInputAnimation 0.8s ease-in-out forwards;
+}
+
+.chat-input__wrapper {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 5px 20px;
+}
+
+.chat-input {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+}
+
+.chat-input__outer-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+}
+
+.chat-inputs .chat-input__outer-circle:first-child {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+.chat-input__wrapper i:nth-child(2) {
+  margin: 0 10px;
+}
+
+@keyframes appearInputAnimation {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes appearOtherMessage {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes appearMyMessage {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes focusInput {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 120px;
+  }
+}
+
+@keyframes focusInputKeyboard {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.chat-column__others {
+  animation: appearOtherMessage 0.8s linear;
+}
+
+.chat-column__me {
+  animation: appearMyMessage 0.8s linear;
+}
+
+.chat-date {
+  animation: fadeIn 0.8s linear;
+}
+
+.chat-inputs:focus-within {
+  animation: focusInput 0.5s forwards;
+}
+
+.chat-inputs:focus-within + .keyboard {
+  animation: focusInputKeyboard 0.5s forwards;
 }

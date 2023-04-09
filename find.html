@@ -9,167 +9,212 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="status-bar">
-        <div class="status-bar__column">
-          <span>SKT</span>
-          <i class="fas fa-wifi"></i>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>SKT</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-sync-alt" style="color: #000000"></i>
+        <span>11%</span>
+        <i class="fas fa-battery-quarter fa-lg" style="color: #000000"></i>
+        <i class="fas fa-bolt" style="color: #000000"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">찾기</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span class="icon-settings">
+          <a href="./settings.html">
+            <i class="fas fa-cog fa-lg"></i>
+          </a>
+          <span class="badge"></span>
+        </span>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fas fa-qrcode"></i>
+          <span>QR 코드</span>
         </div>
-        <div class="status-bar__column">
-          <span>18:43</span>
+        <div class="icon-row__icon">
+          <i class="far fa-address-book"></i>
+          <span>연락처 추가</span>
         </div>
-        <div class="status-bar__column">
-          <i class="fas fa-sync-alt" style="color: #000000"></i>
-          <span>11%</span>
-          <i class="fas fa-battery-quarter fa-lg" style="color: #000000"></i>
-          <i class="fas fa-bolt" style="color: #000000"></i>
+        <div class="icon-row__icon">
+          <i class="far fa-plus-square"></i>
+          <span>ID로 추가</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-envelope"></i>
+          <span>초대</span>
         </div>
       </div>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended Friends</h6>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar--sm"
+              src="https://media.bunjang.co.kr/images/crop/846850451_w%7Bres%7D.jpg"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">간호순</h4>
+              <h6 class="user-component__subtitle">
+                태초마을센터 간호순 입니다^^
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column" style="margin-right: 20px">
+            <span class="user-component__time">
+              <i class="fas fa-plus-circle fa-2x"></i>
+            </span>
+          </div>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar--sm"
+              src="https://t1.daumcdn.net/cfile/tistory/9969D1476014BC0208"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">여경누나</h4>
+              <h6 class="user-component__subtitle">태초마을 담당 여경누나</h6>
+            </div>
+          </div>
+          <div class="user-component__column" style="margin-right: 20px">
+            <span class="user-component__time">
+              <i class="fas fa-plus-circle fa-2x"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4 class="open-chat__title">Open Chat</h4>
+          <span
+            >Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i
+          ></span>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#태초마을</h5>
+            <h6 class="open-post__hashtags">#태초마을#관동지방#친구</h6>
+            <div class="open-post__members">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiE_E5g-w3cWlX8Ah1eQhzotByjH_8LFumTg&usqp=CAU"
+              />
+              <span class="open-post__member-count">14 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="http://file3.instiz.net/data/file3/2018/03/14/2/6/a/26aad1c24e491b5f14b84ffe9ec466e0.jpg"
+              />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart"></i><span>999</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#트레이너</h5>
+            <h6 class="open-post__hashtags">#뱃지#소유자#체육관</h6>
+            <div class="open-post__members">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiE_E5g-w3cWlX8Ah1eQhzotByjH_8LFumTg&usqp=CAU"
+              />
+              <span class="open-post__member-count">151 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://ae01.alicdn.com/kf/Sdc87ee7d87004f3a9f84a3eb3d4ae9a17.jpg?width=1579&height=800&hash=2379"
+              />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart"></i><span>999</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#소개팅</h5>
+            <h6 class="open-post__hashtags">
+              #간호순#여경#간호사#경찰#소개#소개팅
+            </h6>
+            <div class="open-post__members">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiE_E5g-w3cWlX8Ah1eQhzotByjH_8LFumTg&usqp=CAU"
+              />
+              <span class="open-post__member-count">999 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://post-phinf.pstatic.net/MjAxNzEwMTNfNzEg/MDAxNTA3ODM2NTgxMjc3.eSdz_VaxyPchnOJcqL2rO25iVNw330LUcMcFyMN6wRQg.X0u-BYmZhJj4MxzhBj4oRkCGwtS8IRbivuhYnagL0TIg.JPEG/580568_v3.jpg?type=w1200"
+              />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart"></i><span>999</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-      <header class="screen-header">
-        <h1 class="screen-header__title">찾기</h1>
-        <div class="screen-header__icons">
-          <span><i class="fas fa-search fa-lg"></i></span>
-          <span class="icon-settings">
-            <a href="./settings.html">
-              <i class="fas fa-cog fa-lg"></i>
-            </a>
-            <span class="badge"></span>
-          </span>
-        </div>
-      </header>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="./friends.html">
+            <i class="fas fa-user fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="./chats.html">
+            <span class="nav__notification badge">5</span>
+            <i class="fas fa-comment fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="./find.html">
+            <i class="fas fa-search fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <span class="badge nav__notification"></span>
+          <a class="nav__link" href="more.html"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
 
-      <main class="main-screen">
-        <div class="icon-row">
-          <div class="icon-row__icon">
-            <i class="fas fa-qrcode"></i>
-            <span>QR 코드</span>
-          </div>
-          <div class="icon-row__icon">
-            <i class="far fa-address-book"></i>
-            <span>연락처 추가</span>
-          </div>
-          <div class="icon-row__icon">
-            <i class="far fa-plus-square"></i>
-            <span>ID로 추가</span>
-          </div>
-          <div class="icon-row__icon">
-            <i class="far fa-envelope"></i>
-            <span>초대</span>
-          </div>
-        </div>
-        <div class="recommended-friends">
-          <h6 class="recommended-friends__title">Recommended Friends</h6>
-          <span>You have no recommended friends.</span>
-        </div>
-        <div class="open-chat">
-          <div class="open-chat__header">
-            <h4 class="open-chat__title">Open Chat</h4>
-            <span
-              >Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i
-            ></span>
-          </div>
-          <div class="open-post">
-            <div class="open-post__column">
-              <h5 class="open-post__title">#태초마을</h5>
-              <h6 class="open-post__hashtags">#태초마을#관동지방#친구</h6>
-              <div class="open-post__members">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiE_E5g-w3cWlX8Ah1eQhzotByjH_8LFumTg&usqp=CAU"
-                />
-                <span class="open-post__member-count">14 members</span>
-                <div class="divider"></div>
-                <span class="open-post__member-status">Active</span>
-              </div>
-            </div>
-            <div class="open-post__column">
-              <div class="open-post__photo">
-                <img
-                  src="http://file3.instiz.net/data/file3/2018/03/14/2/6/a/26aad1c24e491b5f14b84ffe9ec466e0.jpg"
-                />
-                <div class="open-post__heart-count">
-                  <i class="fas fa-heart"></i><span>999</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="open-post">
-            <div class="open-post__column">
-              <h5 class="open-post__title">#태초마을</h5>
-              <h6 class="open-post__hashtags">#태초마을#관동지방#친구</h6>
-              <div class="open-post__members">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiE_E5g-w3cWlX8Ah1eQhzotByjH_8LFumTg&usqp=CAU"
-                />
-                <span class="open-post__member-count">14 members</span>
-                <div class="divider"></div>
-                <span class="open-post__member-status">Active</span>
-              </div>
-            </div>
-            <div class="open-post__column">
-              <div class="open-post__photo">
-                <img
-                  src="http://file3.instiz.net/data/file3/2018/03/14/2/6/a/26aad1c24e491b5f14b84ffe9ec466e0.jpg"
-                />
-                <div class="open-post__heart-count">
-                  <i class="fas fa-heart"></i><span>999</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="open-post">
-            <div class="open-post__column">
-              <h5 class="open-post__title">#태초마을</h5>
-              <h6 class="open-post__hashtags">#태초마을#관동지방#친구</h6>
-              <div class="open-post__members">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiE_E5g-w3cWlX8Ah1eQhzotByjH_8LFumTg&usqp=CAU"
-                />
-                <span class="open-post__member-count">14 members</span>
-                <div class="divider"></div>
-                <span class="open-post__member-status">Active</span>
-              </div>
-            </div>
-            <div class="open-post__column">
-              <div class="open-post__photo">
-                <img
-                  src="http://file3.instiz.net/data/file3/2018/03/14/2/6/a/26aad1c24e491b5f14b84ffe9ec466e0.jpg"
-                />
-                <div class="open-post__heart-count">
-                  <i class="fas fa-heart"></i><span>999</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
+    <div id="splash-screen">
+      <img src="./img/monsterball.png" />
+    </div>
 
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__btn">
-            <a class="nav__link" href="./friends.html">
-              <i class="fas fa-user fa-lg"></i>
-            </a>
-          </li>
-          <li class="nav__btn">
-            <a class="nav__link" href="./chats.html">
-              <span class="nav__notification badge">1</span>
-              <i class="fas fa-comment fa-lg"></i>
-            </a>
-          </li>
-          <li class="nav__btn">
-            <a class="nav__link" href="./find.html">
-              <i class="fas fa-search fa-lg"></i>
-            </a>
-          </li>
-          <li class="nav__btn">
-            <span class="badge nav__notification"></span>
-            <a class="nav__link" href="more.html"
-              ><i class="fas fa-ellipsis-h fa-lg"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
+    <div id="no-mobile">
+      <img src="./img/monsterball.png" />
+      <span>화면을 조정해주세요ㅜㅜ</span>
+      <span>(넓이: 410px ~ 800px)</span>
     </div>
 
     <script

@@ -1,0 +1,8 @@
+.main-screen.chats {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-screen.chats a {
+  margin-bottom: 40px;
+}

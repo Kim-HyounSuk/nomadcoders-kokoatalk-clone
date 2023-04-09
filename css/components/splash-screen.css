@@ -1,0 +1,34 @@
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes rotateMonsterBall {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#splash-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--yellow);
+  animation: hideSplashScreen 0.8s ease-in-out forwards;
+}
+
+#splash-screen img {
+  animation: rotateMonsterBall 0.5s ease-in-out forwards;
+}

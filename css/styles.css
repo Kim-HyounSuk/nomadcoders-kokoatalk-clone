@@ -12,6 +12,9 @@
 @import "./components/ad-component.css";
 @import "./components/alt-screen-header.css";
 @import "./components/chat.css";
+@import "./components/keyboard.css";
+@import "./components/splash-screen.css";
+@import "./components/no-mobile.css";
 
 /* Screens */
 @import "./screens/login.css";
@@ -19,6 +22,7 @@
 @import "./screens/find.css";
 @import "./screens/more.css";
 @import "./screens/settings.css";
+@import "./screens/chats.css";
 
 body {
   color: var(--darkgray);
@@ -28,9 +32,4 @@ body {
 
 .main-screen {
   padding: 0 var(--horizontal-space) 57px var(--horizontal-space);
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
 }
